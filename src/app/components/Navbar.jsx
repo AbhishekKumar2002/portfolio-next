@@ -11,6 +11,10 @@ const NavLinks = [
     path: "#about",
   },
   {
+    title:"Skills",
+    path:"#skills"
+  },
+  {
     title: "Projects",
     path: "#projects",
   },
@@ -18,6 +22,7 @@ const NavLinks = [
     title: "Contact",
     path: "#contact",
   },
+  
 ];
 
 const Navbar = () => {

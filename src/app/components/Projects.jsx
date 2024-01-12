@@ -102,6 +102,7 @@ const Projects = () => {
         make together. Check and suggest me where can i improve in my project. I
         don't have any experience in team working but i'd love to work together.
       </p>
+      <br /><br />
       {/* <h4>Project</h4> */}
 
       <Suspense fallback={<h1>loading....</h1>}>
@@ -122,6 +123,8 @@ const Projects = () => {
           </div>
         </div>
       </Suspense>
+      <br />
+      <br />
     </div>
   );
 };

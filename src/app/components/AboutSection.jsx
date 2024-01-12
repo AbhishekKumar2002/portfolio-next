@@ -87,7 +87,7 @@ const AboutSection = () => {
                 Full Stack Developer.
                 <br />I am expert in C++, Python, HTML, CSS, Javascript, ReactJS, NodeJS, NextJS, MongoDB, ExpressJS, etc.
                 </p>
-                <div className='flex flex-row mt-8 justify-start'>
+                <div className='flex overflow-x-auto flex-row  mt-8'>
                 <TabButton selecttab={()=>handletabChange("codeforces")} active = {tab==="codeforces"}>
                     {" "}
                     Codeforces{" "}

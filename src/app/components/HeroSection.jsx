@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-700">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Hello, I'm {""}
             </span>
             <br />
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 transition: { duration: 1 },
               }}
               whileTap={{ scale: 0.9 }}
-              className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 to-purple-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </motion.button>
@@ -62,7 +62,7 @@ const HeroSection = () => {
                 transition: { duration: 1 },
               }}
               whileTap={{ scale: 0.9 }}
-              className="px-1 py-1 rounded-full w-full sm:w-fit  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white  mt-3"
+              className="px-1 py-1 rounded-full w-full sm:w-fit  bg-gradient-to-br from-blue-500 to-purple-500  hover:bg-slate-800 text-white  mt-3"
             >
               <span className="block bg-[#121212] hover-bg-slate-800 rounded-full px-5 py-2">
                 {" "}

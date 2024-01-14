@@ -92,7 +92,7 @@ const Projects = () => {
   // console.log(list)
   return (
     <div id="project" className="">
-      <h1 className="text-center text-4xl font-bold  mt-4 mb-8 md:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
+      <h1 className="text-center text-4xl font-bold rounded-lg mt-4 mb-8 md:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
         Featured Projects
       </h1>
       <p className="text-gray-200 text-center text-lg">

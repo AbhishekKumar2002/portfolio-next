@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 
 
@@ -17,7 +18,7 @@ export default function Home() {
         <AboutSection />
         <Skills />
         <Projects />
-        {/* <Temp /> */}
+        <Contact />
       </div>
     </main>
   );

@@ -28,7 +28,7 @@ const Skill =[
 const Skills = () => {
   return (
     <div>
-      <h1 className="text-center text-4xl font-bold  mt-4 mb-8 md:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
+      <h1 className="text-center text-4xl font-bold rounded-lg mt-4 mb-8 md:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
         Skills
       </h1>
       <div className='grid md:grid-cols-7 gap-3 md:gap-8 items-center justify-center'>

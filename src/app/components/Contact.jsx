@@ -86,6 +86,7 @@ const Contact = () => {
         loading: "Sending... 📤",
         success: "Your message has been sent 🎉",
         error: "Uh oh! Something went wrong 😥",
+
       }
     );
 
@@ -103,6 +104,11 @@ const Contact = () => {
     // } catch (error) {
     //   console.error("Unhandled error:", error);
     // }
+    setName('')
+    setEmail('')
+    setMessage('')
+    setPhone('')
+    setSubject('')
     
   };
   return (

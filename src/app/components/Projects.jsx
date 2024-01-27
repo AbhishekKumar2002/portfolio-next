@@ -1,13 +1,17 @@
 "use client";
-import React, { Suspense } from "react";
+import React, { Suspense, useRef } from "react";
 import { db } from "../api/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 
+import { motion, useInView } from "framer-motion";
+
 const Projects = () => {
   const [list, setList] = useState([]);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   // const ProjectCard = (
   //   imglink,
@@ -91,41 +95,45 @@ const Projects = () => {
   }, []);
   // console.log(list)
   return (
-    <div id="project" className="">
-      <h1 className="text-center text-4xl font-bold rounded-lg mt-4 mb-8 md:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
-        Featured Projects
-      </h1>
-      <p className="text-gray-200 text-center text-lg">
-        I have made many small and big project in last few years. So, Guys here
-        are a few of my projects. You can visit my github for all projects list.
-        You can also suggest me some idea about to create project or even we can
-        make together. Check and suggest me where can i improve in my project. I
-        don't have any experience in team working but i'd love to work together.
-      </p>
-      <br /><br />
-      {/* <h4>Project</h4> */}
+    <section id="project">
+      <div ref={ref} id="project" className="">
+        <h1 className="text-center text-4xl font-bold rounded-lg mt-4 mb-8 md:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
+          Featured Projects
+        </h1>
+        <p className="text-gray-200 text-center text-lg">
+          I have made many small and big project in last few years. So, Guys
+          here are a few of my projects. You can visit my github for all
+          projects list. You can also suggest me some idea about to create
+          project or even we can make together. Check and suggest me where can i
+          improve in my project. I don't have any experience in team working but
+          i'd love to work together.
+        </p>
+        <br />
+        <br />
+        {/* <h4>Project</h4> */}
 
-      <Suspense fallback={<h1>loading....</h1>}>
-        <div className="">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {list &&
-              list.map((e) => (
-                <div key={e.title}>
-                  {ProjectCards(
-                    e.imgUrl,
-                    e.title,
-                    e.description,
-                    e.gitUrl,
-                    e.previewUrl
-                  )}
-                </div>
-              ))}
+        <Suspense fallback={<h1>loading....</h1>}>
+          <div className="">
+            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+              {list &&
+                list.map((e) => (
+                  <div key={e.title}>
+                    {ProjectCards(
+                      e.imgUrl,
+                      e.title,
+                      e.description,
+                      e.gitUrl,
+                      e.previewUrl
+                    )}
+                  </div>
+                ))}
+            </div>
           </div>
-        </div>
-      </Suspense>
-      <br />
-      <br />
-    </div>
+        </Suspense>
+        <br />
+        <br />
+      </div>
+    </section>
   );
 };
 

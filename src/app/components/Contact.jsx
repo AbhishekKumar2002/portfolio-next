@@ -84,8 +84,8 @@ const Contact = () => {
         .send(data.service_id, data.template_id, data.values, data.user_id),
       {
         loading: "Sending... 📤",
-        success: "Your message has been sent 🎉",
-        error: "Uh oh! Something went wrong 😥",
+        success: "Message Sent Successfully 😊",
+        error: "Try Again 😥",
 
       }
     );
@@ -112,7 +112,8 @@ const Contact = () => {
     
   };
   return (
-    <div>
+    <section id = "contact">
+      <div>
       <h1 className="text-center text-4xl font-bold rounded-lg mt-4 mb-8 m:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
         Contact ME
       </h1>
@@ -203,6 +204,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

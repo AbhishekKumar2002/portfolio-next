@@ -21,6 +21,6 @@ html{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left ,#b048cf, rgb(83, 231, 231));
+    background: rgb(30 41 59);
     border-radius: 10px;
   }

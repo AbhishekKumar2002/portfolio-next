@@ -7,6 +7,7 @@ import Link from "next/link";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 import { motion, useInView } from "framer-motion";
+import { PageWrapper } from "./PageWrapper";
 
 const Projects = () => {
   const [list, setList] = useState([]);
@@ -95,7 +96,7 @@ const Projects = () => {
   }, []);
   // console.log(list)
   return (
-    <section id="project">
+    <section id="projects">
       <div ref={ref} id="project" className="">
         <h1 className="text-center text-4xl font-bold rounded-lg mt-4 mb-8 md:mb-12 bg-gradient-to-br from-purple-500 to-cyan-500 p-2">
           Featured Projects
